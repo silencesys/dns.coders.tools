@@ -27,7 +27,7 @@ function App() {
           {domainList}
         </div>
         <p className="dnsc__paragraph">
-          This websites uses Cloudflare's DNS API to check whether your DNS records were updated. This means that the status displayed here may not represent current state of DNS propagation with your DNS server.
+          This website uses Cloudflare's DNS API to check whether your DNS records were updated. This means that the status displayed here may not represent current state of DNS propagation with your DNS server.
         </p>
       </main>
       <Footer />
