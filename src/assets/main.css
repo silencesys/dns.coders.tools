@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+}
+
+
+/**
+  2. HEADER
+**/
+.dnsc__header {
+  border-bottom: 1px solid var(--blue-010);
+  font-family: proxima-nova-soft, sans-serif;
+  margin-bottom: 2rem;
+}
+.dnsc__header__wrapper {
+  margin: 0 auto;
+  padding: 1.25rem 0;
+  width: 100%;
+  max-width: 900px;
+}
+.dnsc__header-title--higlight {
+  color: var(--blue-500);
+}
+
+
+/**
+  3. GLOBAL CONTENT
+**/
+.dnsc__main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+}
+.dnsc__button__primary {
+  background-color: var(--blue-500);
+  font-weight: bold;
+  border: none;
+  border-radius: .25rem;
+  color: var(--white);
+  cursor: pointer;
+  padding: .5rem;
+  transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dnsc__button__primary--spaceous {
+  padding: 1rem;
+  border-radius: .5rem;
+}
+.dnsc__button__primary:hover {
+  background-color: var(--blue-600);
+}
+.dnsc__button__primary:focus,
+.dnsc__button__primary:active {
+  border: 1px solid var(--blue-800);
+  outline: none;
+}
+.dnsc__button__danger {
+  background-color: var(--white);
+  border: 1px solid var(--red-400);
+  border-radius: .25rem;
+  color: var(--red-400);
+  cursor: pointer;
+  padding: .5rem;
+  transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dnsc__button__danger:hover {
+  background-color: var(--red-600);
+  border: 1px solid var(--red-600);
+  color: var(--white);
+}
+.dnsc__button__danger:focus,
+.dnsc__button__danger:active {
+  background-color: var(--red-400);
+  color: var(--white);
+  outline: none;
+}
+.dns__badge__updated {
+  background-color: var(--green-500);
+  font-size: .8rem;
+  border: 1px solid var(--green-500);
+  border-radius: .25rem;
+  color: var(--green-900);
+  cursor: pointer;
+  padding: .5rem;
+  transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/**
+  4. FORM
+**/
+.dnsc__form__wrapper {
+  margin-bottom: 3rem;
+}
+.dnsc__form {
+  display: grid;
+  grid-template-columns: 1fr auto .75fr auto;
+  gap: 2rem;
+  border: 1px solid var(--blue-010);
+  border-radius: .5rem;
+  box-shadow: 0 5px 20px var(--blue-800-05),  0 2px 10px var(--blue-800-05);
+  padding: 1.25rem;
+}
+.dnsc__form__input-group {
+}
+.dnsc__form__label {
+  color: var(--blue-600);
+  font-family: proxima-nova-soft, sans-serif;
+  font-size: .8rem;
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+.dnsc__form__input {
+  color: var(--blue-800);
+  border: 1px solid var(--blue-050);
+  border-radius: .25rem;
+  box-sizing: border-box;
+  font-family: proxima-nova-soft, sans-serif;
+  font-size: .8rem;
+  padding: .5rem;
+  width: 100%;
+}
+.dnsc__form__input:focus,
+.dnsc__form__input:active {
+  outline: none;
+  border-color: var(--blue-500);
+}
+
+
+/**
+  5. Domains
+**/
+.dnsc__domain-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.dnsc__domain-tab {
+  font-family: proxima-nova-soft, sans-serif;
+  margin-bottom: 1.5rem;
+}
+.dnsc__domain-tab__value-list {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+.dnsc__domain-grid button {
+  margin-right: 1rem;
+}

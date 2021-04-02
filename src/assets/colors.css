@@ -1,0 +1,92 @@
+@import url("https://use.typekit.net/eft5xxw.css");
+
+:root {
+  --white: #fff;
+  --white-90: rgba(255, 255, 255, .9);
+
+  --blue-010: #F2F7FF;
+  --blue-025: #d8e3f0;
+  --blue-050: #D0DDED;
+  --blue-075: #b4cae9;
+  --blue-100: #9eb4cf;
+  --blue-500: #1C4FD9;
+  --blue-600: #0A2F4A;
+  --blue-700: #112136;
+  --blue-800: #0B1A2F;
+  --blue-800-90: rgba(11, 25, 45, .9);
+  --blue-800-50: rgba(11, 25, 45, .5);
+  --blue-800-05: rgba(11, 25, 45, .025);
+  --blue-900: #07131C;
+  --blue-900-alpha: rgb(7, 19, 29, .8);
+
+  --green-500: #58e28d;
+  --green-900: #053f1b;
+
+  --red-400: #d36363;
+  --red-600: #BA4141;
+
+  --black-05: rgba(0, 0, 0, .05);
+
+  --twitter-blue: #1DA1F2;
+
+  --max-y: 70px;
+}
+
+body {
+  --main-bg-color: var(--white);
+  --main-bg-color-opaque: var(--white-90);
+  --subtle-bg-color: var(--blue-010);
+  --darker-bg-color: var(--blue-010);
+  --darker-bg-color-opaque: var(--blue-900-alpha);
+  --footer-bg-color: var(--blue-600);
+  --main-text-color: var(--blue-800);
+  --sublte-text-color: var(--blue-100);
+  --very-subtle-text-color: var(--blue-025);
+  --paragraph-color: var(--blue-600);
+  --hover-nav-color: var(--red-600);
+  --main-nav-color: var(--blue-800);
+  --footer-nav-color: var(--white);
+  --footer-text-color: var(--white);
+  --sublte-box-shadow: 0 20px 100px var(--blue-010), 0 5px 10px var(--blue-010);
+  --dark-shadow: var(--blue-800-05);
+}
+
+body.theme-system {
+  @media (prefers-color-scheme: dark) {
+    --main-bg-color: var(--blue-800);
+    --main-bg-color-opaque: var(--blue-800-90);
+    --subtle-bg-color: var(--blue-700);
+    --darker-bg-color: var(--blue-900);
+    --darker-bg-color-opaque: var(--blue-900-alpha);
+    --footer-bg-color: var(--blue-900);
+    --main-text-color: var(--blue-050);
+    --sublte-text-color: var(--blue-500);
+    --very-subtle-text-color: var(--blue-600);
+    --paragraph-color: var(--blue-075);
+    --hover-nav-color: var(--red-400);
+    --main-nav-color: var(--blue-050);
+    --footer-nav-color: var(--blue-050);
+    --footer-text-color: var(--blue-050);
+    --sublte-box-shadow: 0 20px 100px var(--blue-700), 0 5px 10px var(--blue-700);
+    --dark-shadow: var(--black-05);
+  }
+}
+
+body.theme-dark {
+  --main-bg-color: var(--blue-800);
+  --main-bg-color-opaque: var(--blue-800-90);
+  --subtle-bg-color: var(--blue-700);
+  --darker-bg-color: var(--blue-900);
+  --darker-bg-color-opaque: var(--blue-900-alpha);
+  --footer-bg-color: var(--blue-900);
+  --main-text-color: var(--blue-050);
+  --sublte-text-color: var(--blue-500);
+  --very-subtle-text-color: var(--blue-600);
+  --paragraph-color: var(--blue-075);
+  --hover-nav-color: var(--red-400);
+  --main-nav-color: var(--blue-050);
+  --footer-nav-color: var(--blue-050);
+  --footer-text-color: var(--blue-050);
+  --sublte-box-shadow: 0 20px 100px var(--blue-700), 0 5px 10px var(--blue-700);
+  --dark-shadow: var(--black-05);
+}
