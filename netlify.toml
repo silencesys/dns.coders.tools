@@ -6,7 +6,7 @@
   for = "/*"
 
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://*.typekit.net; font-src https://*.typekit.net; img-src 'self'; connect-src 'self'; media-src 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'none'; base-uri 'self'"
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://*.typekit.net; font-src https://*.typekit.net; img-src 'self'; connect-src 'self' https://*.cloudflare-dns.com; media-src 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'none'; base-uri 'self'"
     Referrer-Policy = "same-origin"
     Strict-Transport-Security = "max-age=15768000"
     X-Content-Type-Options = "nosniff"
