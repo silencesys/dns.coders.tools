@@ -5,10 +5,12 @@
   --white-90: rgba(255, 255, 255, .9);
 
   --blue-010: #F2F7FF;
+  --blue-015: #e6ecf5;
   --blue-025: #d8e3f0;
   --blue-050: #D0DDED;
   --blue-075: #b4cae9;
   --blue-100: #9eb4cf;
+  --blue-400: #54667c;
   --blue-500: #1C4FD9;
   --blue-600: #0A2F4A;
   --blue-700: #112136;
@@ -22,6 +24,7 @@
   --green-500: #58e28d;
   --green-900: #053f1b;
 
+  --red-200: #f5cece;
   --red-400: #d36363;
   --red-600: #BA4141;
 

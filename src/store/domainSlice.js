@@ -6,12 +6,17 @@ export const domainSlice = createSlice({
     domains: [],
   },
   reducers: {
-    add: (state, action) => {
+    add: (state, { payload }) => {
       // Redux Toolkit allows us to write "mutating" logic in reducers. It
       // doesn't actually mutate the state because it uses the Immer library,
       // which detects changes to a "draft state" and produces a brand new
       // immutable state based off those changes
-      state.domains.unshift(action.payload);
+      const index = state.domains.findIndex(domain => domain.name === payload.name && domain.type === payload.type)
+      if (index > -1) {
+        state.domains[index] = payload
+      } else {
+        state.domains.unshift(payload)
+      }
     },
     update: (state, { payload }) => {
       const index = state.domains.findIndex(domain => domain.name === payload.name && domain.type === payload.type)

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { add } from '../store/domainSlice'
+import ErrorBar from './ErrorBar'
 
 function Form () {
   const [name, setName] = useState('')
@@ -17,6 +18,7 @@ function Form () {
   const addDomain = (e) => {
     e.preventDefault()
     if (name.match(/^(?!-\:)[-a-zA-Z0-9.]{2,256}\.[a-zA-Z]{2,8}$/g)) {
+      setNameError('')
       dispatch(
         add({
           name: name,
@@ -31,11 +33,7 @@ function Form () {
 
   let validatorError = ''
   if (nameError) {
-    validatorError = (
-      <span className="dnsc__form__error-message">
-        {nameError}
-      </span>
-    )
+    validatorError = (<ErrorBar message={nameError} />)
   }
 
   return (
